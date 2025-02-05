@@ -4,7 +4,7 @@ title: Adrián Santonja
 
 # Full name (for SEO)
 first_name: Adrián
-last_name: Santonja
+last_name: Santonja 
 
 # Status emoji
 status:
