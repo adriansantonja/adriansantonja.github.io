@@ -45,7 +45,7 @@ education:
   - area: PhD in Economics
     institution: University of Potsdam
     date_start: 2021-09-01
-    date_end: 
+    date_end: 2024-09-01
  
   - area: M.Sc. in Economics
     institution: University of Mannheim
