@@ -52,7 +52,7 @@ education:
     date_start: 2016-09-01
     date_end: 2019-08-01
    
-   - area: B.Sc. in Economics
+  - area: B.Sc. in Economics
     institution: University of Mannheim
     date_start: 2013-09-01
     date_end: 2016-08-01
