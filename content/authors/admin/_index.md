@@ -8,7 +8,7 @@ last_name: Santonja
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 
 
 # Is this the primary user of the site?
 superuser: true
@@ -34,6 +34,8 @@ profiles:
   - icon: at-symbol
     url: 'mailto:asantonjadifonzo@diw.de'
     label: E-mail Me
+  - icon: Bluesky_Logo.svg
+    url: 'https://bsky.app/profile/adriansantonja.bsky.social'
   
 
 interests:
