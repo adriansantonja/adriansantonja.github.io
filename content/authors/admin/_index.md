@@ -39,7 +39,7 @@ profiles:
 interests:
   - Environmental Economics
   - Health Economics
-  - Transportation Economics
+  - Transport Economics
 
 education:
   - area: PhD in Economics
