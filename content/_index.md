@@ -45,17 +45,7 @@ sections:
       text: ""
       filters:
         folders:
-          - workingpapers
+          - publication
     design:
       view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Upcoming Talks
-      filters:
-        folders:
-          - event
-    design:
-      view: article-grid
-      columns: 1
 ---
