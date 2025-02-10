@@ -42,7 +42,7 @@ sections:
       view: citation
   - block: collection
     content:
-      title: Working Papers
+      title: Working Papers 
       text: ""
       filters:
         folders:
