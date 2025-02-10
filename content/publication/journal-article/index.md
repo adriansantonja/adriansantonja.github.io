@@ -17,6 +17,9 @@ publishDate: "2017-01-01T00:00:00Z"
 # Enter a publication type from the CSL standard.
 publication_type: journal
 
+date: 2025-02-10
+draft: false
+
 # Publication name and optional abbreviated publication name.
 publication: "*Journal of Source Themes, 1*(1)"
 publication_short: ""
