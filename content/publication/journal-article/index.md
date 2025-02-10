@@ -18,7 +18,7 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_type: "article-journal"
 
 date: 2025-02-10
-draft: false
+#draft: false
 
 # Publication name and optional abbreviated publication name.
 publication: "*Journal of Source Themes, 1*(1)"
