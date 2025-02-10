@@ -39,6 +39,7 @@ sections:
         publication_type: journal
     design:
       view: citation
+      count: 0
   - block: collection
     content:
       title: Working Papers
