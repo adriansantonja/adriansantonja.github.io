@@ -37,7 +37,7 @@ sections:
       filters:
         folders:
           - publication
-        publication_type: article-journal
+        publication_types: article-journal
     design:
       view: citation
   - block: collection
@@ -47,7 +47,7 @@ sections:
       filters:
         folders:
           - publication
-        publication_type: manuscript
+        publication_types: manuscript
     design:
       view: citation
 ---
