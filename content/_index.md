@@ -47,7 +47,7 @@ sections:
       filters:
         folders:
           - publication
-        publication_type: article-journal
+        publication_type: manuscript
     design:
       view: citation
 ---
