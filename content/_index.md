@@ -36,7 +36,7 @@ sections:
       filters:
         folders:
           - publication
-        publication_type: journal
+        #publication_type: journal
     design:
       view: citation
       count: 0
