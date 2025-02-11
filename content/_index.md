@@ -36,7 +36,7 @@ sections:
       text: ""
       filters:
         folders:
-          - publication/journal-article
+          - publication
         publication_types: 
           - ["2"]
     design:
@@ -47,7 +47,7 @@ sections:
       text: ""
       filters:
         folders:
-          - publication
+          - working_paper
         publication_types: 
           - ["3"]
     design:
