@@ -38,7 +38,7 @@ sections:
         folders:
           - publication
         publication_types: 
-          - article-journal
+          - ["2"]
     design:
       view: citation
   - block: collection
@@ -49,7 +49,7 @@ sections:
         folders:
           - publication
         publication_types: 
-          - manuscript
+          - ["3"]
     design:
       view: citation
 ---
