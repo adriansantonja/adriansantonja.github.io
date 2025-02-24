@@ -52,4 +52,15 @@ sections:
           - ["3"]
     design:
       view: citation
+  - block: collection
+    content:
+      title: Work in progress 
+      text: ""
+      filters:
+        folders:
+          - Work in progress
+        publication_types: 
+          - ["3"]
+    design:
+      view: citation
 ---
