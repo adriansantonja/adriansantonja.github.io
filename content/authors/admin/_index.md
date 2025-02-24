@@ -34,7 +34,7 @@ profiles:
   - icon: at-symbol
     url: 'mailto:asantonjadifonzo@diw.de'
     label: E-mail Me
-  - icon: assets/media/Bluesky_Logo.png
+  - icon: assets/media/icons/Bluesky_Logo.svg
     url: 'https://bsky.app/profile/adriansantonja.bsky.social'
   
 
