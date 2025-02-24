@@ -48,8 +48,6 @@ sections:
       filters:
         folders:
           - Work in progress
-        publication_types: 
-          - ["3"]
     design:
       view: citation
 
