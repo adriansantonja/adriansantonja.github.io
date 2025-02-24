@@ -1,13 +1,13 @@
 ---
-title: "Understanding the link between heat and intimate partner violence"
+title: "2Understanding the link between heat and intimate partner violence"
 date: 2025-02-11
 authors:
   - Laura Schmitz
   - admin
   - Judit Vall
 #publication_types: ["3"] # 2 = Journal article, 1 = Conference paper, etc.
-publication: "Working Paper"
-abstract: "Even though one in four women worldwide has experienced violence from an intimate
+#publication: "Working Paper"
+abstract: "Even though one in four women worldwide has experienced violence from an intimate 
 partner (IPV) at least once in their lifetime, some of the factors driving it remain
 poorly understood. This study quantifies the impact of extreme temperatures on
 IPV seasonality, with a particular focus on its increase during the summer months.
