@@ -13,6 +13,6 @@ main:
   - name: Working Papers
     url: working_paper/
     weight: 12
-  - name: Teaching
-    url: teaching/
-    weight: 40
+  - name: Work in progress
+    url: Work in progress/
+    weight: 13
