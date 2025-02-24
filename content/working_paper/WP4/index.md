@@ -1,7 +1,7 @@
 ---
 
 title: "Carbon Cost Pass-Through in European Aviation"
-date: 2025-02-11
+#date: 2025-02-11
 authors:
 
   - admin
