@@ -1,6 +1,6 @@
 ---
 title: "Understanding the link between heat and intimate partner violence"
-#date: 2025-02-11
+date: 2025-02-11
 authors:
   - Laura Schmitz
   - admin
