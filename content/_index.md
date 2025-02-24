@@ -43,7 +43,7 @@ sections:
       view: citation
   - block: collection
     content:
-      title: Work in progress 
+      title: Work in progress 3
       text: ""
       filters:
         folders:
