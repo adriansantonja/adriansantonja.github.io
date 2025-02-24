@@ -43,11 +43,11 @@ sections:
       view: citation
   - block: collection
     content:
-      title: Work in progress 3
+      title: Work in progress
       text: ""
       filters:
         folders:
-          - Work in progress
+          - working_paper
     design:
       view: citation
 
