@@ -43,17 +43,6 @@ sections:
       view: citation
   - block: collection
     content:
-      title: Working Papers 
-      text: ""
-      filters:
-        folders:
-          - working_paper
-        publication_types: 
-          - ["3"]
-    design:
-      view: citation
-  - block: collection
-    content:
       title: Work in progress 
       text: ""
       filters:
@@ -63,4 +52,5 @@ sections:
           - ["3"]
     design:
       view: citation
+
 ---
