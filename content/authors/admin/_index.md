@@ -22,11 +22,11 @@ role: PhD Candidate
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: University of Potsdam
-    url: https://www.uni-potsdam.de/en/wiso/
+    url: https://www.uni-potsdam.de/de/vwl-wipo/team/wissenschaftliche-mitarbeiter/adrian-santonja-di-fonzo
   - name: DIW Berlin
-    url: https://www.diw.de/sixcms/detail.php?id=diw_01.c.617916.en
+    url: https://www.diw.de/sixcms/detail.php?id=diw_01.c.800251.en
   - name: Berlin School of Economics
-    url: https://berlinschoolofeconomics.de/home
+    url: https://berlinschoolofeconomics.de/people/members/adrian-santonja
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -49,17 +49,17 @@ interests:
   - Transport Economics
 
 education:
-  - area: PhD in Economics
+  - area: PhD in Economics, 2020-present
     institution: University of Potsdam
     date_start: 2021-09-01
     date_end: 2024-09-01
  
-  - area: M.Sc. in Economics
+  - area: M.Sc. in Economics, 2016-2019
     institution: University of Mannheim
     date_start: 2016-09-01
     date_end: 2019-08-01
    
-  - area: B.Sc. in Economics
+  - area: B.Sc. in Economics, 2013-2016
     institution: University of Mannheim
     date_start: 2013-09-01
     date_end: 2016-08-01
@@ -101,6 +101,6 @@ education:
 
 Welcome to my webpage!
 
-I am a PhD candidate at the University of Potsdam and DIW Berlin.
+I am a PhD candidate at the University of Potsdam and DIW Berlin. I am also affiliated with the Berlin School of Economics. 
 
 I am an applied microeconomist with a primary focus on environmental economics and health economics.
