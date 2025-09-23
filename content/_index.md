@@ -65,6 +65,8 @@ sections:
       filters:
         folders:
           - current
+      citation:
+        link: false 
     design:
       view: citation
 ---
