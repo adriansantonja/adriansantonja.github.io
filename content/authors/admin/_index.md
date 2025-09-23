@@ -38,7 +38,10 @@ profiles:
     icon_pack: custom
     url: 'https://bsky.app/profile/adriansantonja.bsky.social'
     label: Bluesky
-  
+  - icon: linkedin
+    icon_pack: custom
+    url: 'https://www.linkedin.com/in/adri%C3%A1n-santonja-di-fonzo-97498a129/'
+    label: LinkedIn
 
 interests:
   - Environmental Economics
