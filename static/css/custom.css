@@ -10,3 +10,7 @@ body {
   max-height: 100% !important;
   vertical-align: middle;
 }
+
+html {
+  scroll-behavior: smooth;
+}
