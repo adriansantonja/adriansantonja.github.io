@@ -54,6 +54,8 @@ sections:
           - working
         publication_types: 
           - ["2"]
+      citation:
+        link: false 
     design:
       view: citation
 
