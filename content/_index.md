@@ -43,6 +43,20 @@ sections:
     design:
       view: citation
 
+
+  - block: collection
+    id: working-papers
+    content:
+      title: Working Papers
+      text: ""
+      filters:
+        folders:
+          - working
+        publication_types: 
+          - ["2"]
+    design:
+      view: citation
+
   - block: collection
     id: work-in-progress
     content:
