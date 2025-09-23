@@ -31,6 +31,7 @@ sections:
         # parallax: false
 
   - block: collection
+    id: publications
     content:
       title: Publications
       text: ""
