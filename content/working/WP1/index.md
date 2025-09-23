@@ -1,9 +1,9 @@
 ---
-title: "Effectiveness and Heterogeneous Effects of Purchase Grants for Electric Vehicles"
+title: "Understanding the link between heat and intimate partner violence"
 authors:
-- Peter Haan
-- admin
-- Aleksandar Zaklan
+  - admin
+  - Laura Schmitz
+  - Judit Vall
 
 date: "2015-09-01T00:00:00Z"
 doi: ""
@@ -19,11 +19,7 @@ publishDate: "2017-01-01T00:00:00Z"
 date: 2025-02-10
 draft: false
 
-# Publication name and optional abbreviated publication name.
-publication: "Environmental and Resource Economics"
-publication_short: ""
 
-abstract: We evaluate German purchase subsidies for battery electric vehicles (BEVs) and plug-in hybrid electric vehicles (PHEVs) using data on new vehicle registrations in Germany during 2015-2022. We account for confounding time trends and interacting EU-level CO2 standards using neighboring countries as a control group. We find that 40% of BEV and 25% of PHEV registrations were subsidy-induced. The program had strong distributional effects, with greater uptake in wealthier and greener counties. We estimate implied abatement costs of 870 euro per ton of CO2 for BEVs and 2,470 euro for PHEVs, suggesting that policy makers should re-balance support schemes away from PHEVs.
 
 # Summary. An optional shortened abstract.
 
@@ -32,7 +28,7 @@ abstract: We evaluate German purchase subsidies for battery electric vehicles (B
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://link.springer.com/article/10.1007/s10640-024-00929-z
+url_pdf: https://ieb.ub.edu/publication/2025-08-understanding-the-link-between-heat-and-intimate-partner-violence/
 url_code: ''
 url_dataset: ''
 url_poster: ''
