@@ -101,6 +101,6 @@ education:
 
 Welcome to my webpage!
 
-I am a PhD candidate at the University of Potsdam and DIW Berlin. I am also affiliated with the Berlin School of Economics. 
+I am a PhD Candidate at the University of Potsdam and DIW Berlin, and I am also affiliated with the Berlin School of Economics. 
 
 I am an applied microeconomist with a primary focus on environmental economics and health economics.
