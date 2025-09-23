@@ -2,3 +2,9 @@ body {
   background-color: #006C85 !important; /* petrol blue */
   color: #ffffff; /* optional: makes text readable */
 }
+
+.icon-pack-custom .icon-bluesky svg {
+  width: 1.2em;   /* same size as other icons */
+  height: 1.2em;
+  vertical-align: middle;
+}
