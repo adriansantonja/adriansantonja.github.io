@@ -37,7 +37,8 @@ url_slides: ''
 url_source: ''
 url_video: ''
 
-# Featured image
-
+_build:
+  render: never
+  list: always
 
 ---
