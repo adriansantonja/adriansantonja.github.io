@@ -44,12 +44,13 @@ sections:
       view: citation
 
   - block: collection
+    id: work-in-progress
     content:
       title: Work in progress
       text: ""
       filters:
         folders:
-          - working_paper
+          - current
     design:
       view: citation
 ---
