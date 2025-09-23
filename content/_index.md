@@ -21,15 +21,15 @@ sections:
     design:
       css_class: dark
       background:
-        color: black
-        image:
-          # Add your image background to `assets/media/`.
-          filename: stacked-peaks.svg
-          filters:
-            brightness: 1.0
-          size: cover
-          position: center
-          parallax: false
+        color: "#006C84"
+        # Add your image background to `assets/media/`.
+        # filename: stacked-peaks.svg
+        # filters:
+        #   brightness: 1.0
+        # size: cover
+        # position: center
+        # parallax: false
+
   - block: collection
     content:
       title: Publications
@@ -41,6 +41,7 @@ sections:
           - ["2"]
     design:
       view: citation
+
   - block: collection
     content:
       title: Work in progress
@@ -50,5 +51,4 @@ sections:
           - working_paper
     design:
       view: citation
-
 ---
