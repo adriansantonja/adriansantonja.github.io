@@ -37,8 +37,5 @@ url_slides: ''
 url_source: ''
 url_video: ''
 
-_build:
-  render: never
-  list: always
 
 ---
