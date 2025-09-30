@@ -38,8 +38,6 @@ sections:
       filters:
         folders:
           - publication
-        publication_types: 
-          - ["2"]
     design:
       view: citation
 
@@ -52,8 +50,6 @@ sections:
       filters:
         folders:
           - working
-        publication_types: 
-          - ["2"]
       citation:
         link: false 
     design:
