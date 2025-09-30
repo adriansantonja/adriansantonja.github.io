@@ -16,6 +16,10 @@ publishDate: "2017-01-01T00:00:00Z"
 # Enter a publication type from the CSL standard.
 #publication_types: ["2"]
 
+
+type: publication                 # <— tell Hugo this is a publication entry
+publication_types: ["2"]          # <— use "3" if it belongs in Working Papers
+
 date: 2025-02-10
 draft: false
 

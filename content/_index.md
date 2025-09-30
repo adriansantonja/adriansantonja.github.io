@@ -38,6 +38,8 @@ sections:
       filters:
         folders:
           - publication
+      citation:
+        link: false
     design:
       view: citation
 
