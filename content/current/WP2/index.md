@@ -1,5 +1,5 @@
 ---
-title: "The Pernicious Air Quality and Mortality Effects of Low Emission Zones – Evidence from Madrid Central"
+title: "- The Pernicious Air Quality and Mortality Effects of Low Emission Zones – Evidence from Madrid Central"
 date: 2025-02-11
 authors:
   - admin
