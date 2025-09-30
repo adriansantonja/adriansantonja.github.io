@@ -62,3 +62,6 @@ features:
 params:
   customCSS: ["css/custom.css"]
 
+site:
+  favicon: "uploads/Adrian_Santonja_small.png"
+
