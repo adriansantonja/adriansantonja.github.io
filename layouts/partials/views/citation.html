@@ -12,11 +12,11 @@
   </span>
   ({{- $item.Date.Format "2006" -}}).
   {{ $item.Title }}
-  {{ if $item.Params.publication_short }}
-    {{- $item.Params.publication_short | markdownify -}}.
-  {{ else if $item.Params.publication }}
-    {{- $item.Params.publication | markdownify -}}.
-  {{ end }}
+{{ if $item.Params.publication_short }}
+  <em>{{- $item.Params.publication_short | markdownify -}}</em>.
+{{ else if $item.Params.publication }}
+  <em>{{- $item.Params.publication | markdownify -}}</em>.
+{{ end }}
 
   {{ if $has_attachments }}
   <div class="flex flex-wrap space-x-3">
@@ -31,11 +31,11 @@
     {{ partial "page_metadata_authors" $item }}.
   </span>
   {{ $item.Title }}
-  {{ if $item.Params.publication_short }}
-    {{- $item.Params.publication_short | markdownify -}},
-  {{ else if $item.Params.publication }}
-    {{- $item.Params.publication | markdownify -}},
-  {{ end }}
+{{ if $item.Params.publication_short }}
+  <em>{{- $item.Params.publication_short | markdownify -}}</em>,
+{{ else if $item.Params.publication }}
+  <em>{{- $item.Params.publication | markdownify -}}</em>,
+{{ end }}
   {{- $item.Date.Format "2006" -}}.
 
   {{ if $has_attachments }}
