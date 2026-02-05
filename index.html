@@ -231,6 +231,16 @@
             letter-spacing: 0.02em;
             position: relative;
         }
+
+        .affiliation a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .affiliation a:hover {
+            color: var(--terracotta);
+        }
  
         .affiliation::after {
             content: '·';
@@ -677,16 +687,16 @@
                 <div class="title">PhD Candidate in Economics</div>
                 
                 <div class="affiliations">
-                    <span class="affiliation">University of Potsdam</span>
-                    <span class="affiliation">DIW Berlin</span>
-                    <span class="affiliation">Berlin School of Economics</span>
+                    <span class="affiliation"><a href="https://www.uni-potsdam.de/de/vwl-wipo/team/wissenschaftliche-mitarbeiter/adrian-santonja-di-fonzo" target="_blank">University of Potsdam</a></span>
+                    <span class="affiliation"><a href="https://www.diw.de/sixcms/detail.php?id=diw_01.c.800251.en" target="_blank">DIW Berlin</a></span>
+                    <span class="affiliation"><a href="https://berlinschoolofeconomics.de/people/members/adrian-santonja" target="_blank">Berlin School of Economics</a></span>
                 </div>
  
                 <p class="bio">
                     Welcome to my webpage! I am a PhD Candidate at the University of Potsdam and DIW Berlin, and I am also affiliated with the Berlin School of Economics. I am an applied microeconomist with a primary focus on environmental economics and health economics.
                 </p>
  
-                <a href="Adrian_Santonja_CV.pdf" class="cv-button">
+                <a href="Adrian_Santonja_CV.pdf" class="cv-button" target="_blank">
                     Curriculum Vitae
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -718,7 +728,7 @@
                     <span class="year">2025</span>
                 </div>
                 <div class="publication-meta">
-                    <span class="journal"><a href="#" target="_blank">PDF</a></span>
+                    <span class="journal"><a href="https://link.springer.com/article/10.1007/s10640-024-00929-z" target="_blank">PDF</a></span>
                 </div>
             </div>
  
@@ -732,7 +742,7 @@
                     <span class="year">2025</span>
                 </div>
                 <div class="publication-meta">
-                    <span class="journal"><a href="#" target="_blank">PDF</a></span>
+                    <span class="journal"><a href="https://ieb.ub.edu/wp-content/uploads/2025/07/Doc2025-09_Ok.pdf" target="_blank">PDF</a></span>
                 </div>
             </div>
  
@@ -816,11 +826,18 @@
     </footer>
  
     <script>
-        // Smooth scrolling
+        // Smooth scrolling - fixed to ignore placeholder links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                
+                // Only handle internal anchor links, not placeholder links
+                if (href === '#' || href === '#!') {
+                    return;
+                }
+                
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const target = document.querySelector(href);
                 if (target) {
                     target.scrollIntoView({
                         behavior: 'smooth',
