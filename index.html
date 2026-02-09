@@ -14,6 +14,7 @@
             --stone: #6b6157;
             --forest: #3d5a3d;
             --forest-light: #5a7a5a;
+            --forest-dark: #2d4a2d;
             --olive: #6b6f4c;
             --olive-light: #8a8e6d;
             --brown: #6b4423;
@@ -123,39 +124,64 @@
             width: 100%;
         }
  
-        /* Main Content */
-        .container {
-            max-width: 1300px;
-            margin: 0 auto;
-            padding: 140px 3rem 80px;
+        /* Hero Section with Dark Green Background */
+        .hero-wrapper {
+            background: linear-gradient(135deg, var(--forest-dark) 0%, var(--forest) 100%);
+            margin-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+
+        .hero-wrapper::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: linear-gradient(to bottom, transparent, rgba(45, 74, 45, 0.2));
+            pointer-events: none;
         }
  
         /* Hero Section */
         .hero {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 6rem 3rem;
             display: grid;
             grid-template-columns: 1fr 320px;
             gap: 5rem;
             align-items: center;
-            margin-bottom: 8rem;
-            padding: 4rem 0;
             position: relative;
         }
  
         .hero::before {
             content: '';
             position: absolute;
-            top: -60px;
-            left: -100px;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, var(--olive) 0%, transparent 70%);
-            opacity: 0.05;
-            filter: blur(60px);
+            top: -40px;
+            right: -80px;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(107, 111, 76, 0.15) 0%, transparent 70%);
+            filter: blur(50px);
             pointer-events: none;
         }
  
         .hero-content {
             animation: fadeSlideUp 1s ease-out;
+            position: relative;
+            z-index: 1;
         }
  
         @keyframes fadeSlideUp {
@@ -172,6 +198,7 @@
         .hero-photo {
             position: relative;
             animation: fadeSlideUp 1s ease-out 0.2s both;
+            z-index: 1;
         }
  
         .hero-photo::before {
@@ -181,8 +208,7 @@
             left: 20px;
             right: -20px;
             bottom: -20px;
-            border: 1px solid var(--forest);
-            opacity: 0.3;
+            border: 1px solid rgba(107, 68, 35, 0.4);
             z-index: -1;
         }
  
@@ -190,28 +216,30 @@
             width: 100%;
             aspect-ratio: 4/5;
             object-fit: cover;
-            filter: grayscale(20%) contrast(1.05);
+            filter: grayscale(10%) contrast(1.08) brightness(1.05);
             transition: all 0.6s ease;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         }
  
         .hero-photo:hover .profile-photo {
-            filter: grayscale(0%) contrast(1);
+            filter: grayscale(0%) contrast(1.1) brightness(1.08);
         }
  
         .hero h1 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 3.8rem;
-            color: var(--ink);
+            color: #ffffff;
             margin-bottom: 0.5rem;
             font-weight: 400;
             letter-spacing: -0.03em;
             line-height: 1.1;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
         }
  
         .hero .title {
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.4rem;
-            color: var(--stone);
+            color: rgba(255, 255, 255, 0.9);
             margin-bottom: 2.5rem;
             font-weight: 400;
             font-style: italic;
@@ -227,7 +255,7 @@
  
         .affiliation {
             background: transparent;
-            color: var(--stone);
+            color: rgba(255, 255, 255, 0.85);
             padding: 0.5rem 0;
             font-size: 0.85rem;
             font-weight: 400;
@@ -239,16 +267,18 @@
             color: inherit;
             text-decoration: none;
             transition: color 0.3s ease;
+            border-bottom: 1px solid transparent;
         }
 
         .affiliation a:hover {
-            color: var(--forest);
+            color: #ffffff;
+            border-bottom-color: rgba(255, 255, 255, 0.5);
         }
  
         .affiliation::after {
             content: '·';
             margin-left: 0.8rem;
-            color: var(--olive);
+            color: var(--brown-light);
         }
  
         .affiliation:last-child::after {
@@ -258,7 +288,7 @@
         .hero .bio {
             font-size: 1.05rem;
             line-height: 1.9;
-            color: var(--stone);
+            color: rgba(255, 255, 255, 0.92);
             margin-bottom: 2.5rem;
             font-weight: 300;
             max-width: 580px;
@@ -269,7 +299,7 @@
             align-items: center;
             gap: 0.8rem;
             background: transparent;
-            color: var(--ink);
+            color: #ffffff;
             padding: 1rem 2rem;
             text-decoration: none;
             font-weight: 500;
@@ -277,7 +307,7 @@
             letter-spacing: 0.1em;
             text-transform: uppercase;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid var(--ink);
+            border: 1px solid rgba(255, 255, 255, 0.7);
             position: relative;
             overflow: hidden;
         }
@@ -289,13 +319,14 @@
             left: 0;
             width: 0;
             height: 100%;
-            background: var(--ink);
+            background: var(--brown-light);
             transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             z-index: -1;
         }
  
         .cv-button:hover {
-            color: var(--paper);
+            color: #ffffff;
+            border-color: var(--brown-light);
         }
  
         .cv-button:hover::before {
@@ -310,6 +341,13 @@
  
         .cv-button:hover svg {
             transform: translateX(4px);
+        }
+ 
+        /* Main Content */
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 80px 3rem;
         }
  
         /* Section Headers */
@@ -697,7 +735,11 @@
             }
  
             .container {
-                padding: 120px 1.5rem 60px;
+                padding: 60px 1.5rem;
+            }
+
+            .hero {
+                padding: 4rem 1.5rem;
             }
  
             .hero h1 {
@@ -752,7 +794,7 @@
         /* Focus states */
         .nav-links a:focus,
         .cv-button:focus {
-            outline: 2px solid var(--forest);
+            outline: 2px solid var(--brown-light);
             outline-offset: 4px;
         }
  
@@ -779,9 +821,8 @@
         </div>
     </nav>
  
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Hero Section -->
+    <!-- Hero Section with Dark Green Background -->
+    <div class="hero-wrapper">
         <section id="about" class="hero">
             <div class="hero-content">
                 <h1>Adrián Santonja</h1>
@@ -809,7 +850,10 @@
                 <img src="Adrian_Santonja_medium.jpg" alt="Adrián Santonja" class="profile-photo">
             </div>
         </section>
+    </div>
  
+    <!-- Main Content -->
+    <div class="container">
         <!-- Research -->
         <section id="research" class="section">
             <div class="section-header">
