@@ -29,6 +29,7 @@
  
         html {
             scroll-behavior: smooth;
+            scroll-padding-top: 100px; /* Added to account for fixed navbar */
         }
  
         body {
@@ -312,6 +313,7 @@
         /* Section Headers */
         .section {
             margin-bottom: 8rem;
+            scroll-margin-top: 100px; /* Added to ensure section title is visible */
         }
  
         .section-header {
@@ -382,6 +384,16 @@
  
         .publication:hover::before {
             height: 60px;
+        }
+ 
+        /* Reduced spacing for Work in Progress items */
+        .publication.wip {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem 0;
+        }
+
+        .publication.wip:hover::before {
+            height: 40px;
         }
  
         .publication-title {
@@ -848,7 +860,7 @@
             <!-- Work in Progress -->
             <h3 class="subsection-title">Work in Progress</h3>
  
-            <div class="publication animate-on-scroll">
+            <div class="publication wip animate-on-scroll">
                 <h3 class="publication-title">Carbon Cost Pass-Through in European Aviation</h3>
                 <div class="coauthors">With Jordi Teixidó and Aleksandar Zaklan</div>
                 <div class="publication-meta">
@@ -856,7 +868,7 @@
                 </div>
             </div>
  
-            <div class="publication animate-on-scroll">
+            <div class="publication wip animate-on-scroll">
                 <h3 class="publication-title">Health Impacts of Transboundary Air Pollution: Evidence from the German-Polish Border</h3>
                 <div class="coauthors">With Shushanik Margaryan and Thomas Siedler</div>
                 <div class="publication-meta">
@@ -864,7 +876,7 @@
                 </div>
             </div>
  
-            <div class="publication animate-on-scroll">
+            <div class="publication wip animate-on-scroll">
                 <h3 class="publication-title">The Pernicious Air Quality and Mortality Effects of Low Emission Zones – Evidence from Madrid Central</h3>
                 <div class="coauthors">With Alejandro Sarmiento and Nicole Wägner</div>
                 <div class="publication-meta">
