@@ -1,1 +1,269 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>MoabitKino – Spring 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Source+Sans+3:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:           #faf9f7;
+      --text:         #1c1c1c;
+      --subtle:       #6b6560;
+      --accent:       #1a3a2e;
+      --accent-mid:   #2d5c48;
+      --accent-light: #dce9e3;
+      --rule:         #d4cfc7;
+      --tag-bg:       #dce9e3;
+      --tag-text:     #1a3a2e;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 18px;
+      line-height: 1.72;
+    }
+
+    body {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 6rem;
+    }
+
+    /* ── Header ── */
+
+    header {
+      margin-bottom: 3.5rem;
+    }
+
+    .site-label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent-mid);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      color: var(--accent);
+      margin-bottom: 0.35rem;
+    }
+
+    .subtitle {
+      font-style: italic;
+      color: var(--subtle);
+      font-size: 1.1rem;
+    }
+
+    .header-rule {
+      margin-top: 1.8rem;
+      border: none;
+      border-top: 2px solid var(--accent);
+      width: 2.5rem;
+    }
+
+    /* ── Film list ── */
+
+    .film-list {
+      list-style: none;
+    }
+
+    .film-entry {
+      padding: 2.4rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .film-entry:first-child {
+      padding-top: 0.2rem;
+    }
+
+    .film-date {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent-mid);
+      margin-bottom: 0.55rem;
+    }
+
+    .film-title {
+      font-size: 1.4rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+      color: var(--accent);
+      margin-bottom: 0.45rem;
+    }
+
+    .film-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .tag {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      padding: 0.2em 0.6em;
+      border-radius: 2px;
+    }
+
+    .tag.format {
+      background: transparent;
+      border: 1px solid var(--rule);
+      color: var(--subtle);
+    }
+
+    .film-synopsis {
+      font-size: 0.97rem;
+      line-height: 1.72;
+      color: #3a3530;
+      margin-bottom: 1.1rem;
+      padding-left: 0.9rem;
+      border-left: 2px solid var(--accent-light);
+    }
+
+    .film-links {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.76rem;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      display: flex;
+      gap: 1.4rem;
+      flex-wrap: wrap;
+    }
+
+    .film-links a {
+      color: var(--accent-mid);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .film-links a::after {
+      content: ' ↗';
+      font-size: 0.7em;
+      opacity: 0.5;
+    }
+
+    .film-links a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ── Awards (inline in tags row) ── */
+
+    .award {
+      margin-left: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35em;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.69rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      padding: 0.25em 0.65em;
+      border-radius: 2px;
+      background: #f5edcc;
+      color: #5a3e00;
+      border: 1px solid #e8d68a;
+    }
+
+    /* ── Footer ── */
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.74rem;
+      font-weight: 300;
+      color: var(--subtle);
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <p class="site-label">MoabitKino</p>
+    <h1>Spring Programme 2026</h1>
+    <p class="subtitle">Iranian Cinema</p>
+    <hr class="header-rule">
+  </header>
+
+  <ul class="film-list">
+
+    <li class="film-entry">
+      <p class="film-date">17 April &nbsp;·&nbsp; Doors 8 pm &nbsp;·&nbsp; Film 8:30 pm</p>
+      <h2 class="film-title">It Was Just an Accident</h2>
+      <div class="film-tags">
+        <span class="tag">Jafar Panahi</span>
+        <span class="tag">2025</span>
+        <span class="award">🏆 Cannes 2025 — Palme d'Or</span>
+      </div>
+      <p class="film-synopsis">An unassuming mechanic is reminded of his time in an Iranian prison when he encounters a man he suspects to be his sadistic jailhouse captor.</p>
+      <div class="film-links">
+        <a href="https://letterboxd.com/film/it-was-just-an-accident/" target="_blank" rel="noopener">Letterboxd</a>
+        <a href="https://www.youtube.com/watch?v=Y7X9sSZ0nYw" target="_blank" rel="noopener">Trailer</a>
+      </div>
+    </li>
+
+    <li class="film-entry">
+      <p class="film-date">30 April &nbsp;·&nbsp; Doors 8 pm &nbsp;·&nbsp; Film 8:30 pm</p>
+      <h2 class="film-title">The Seed of the Sacred Fig</h2>
+      <div class="film-tags">
+        <span class="tag">Mohammad Rasoulof</span>
+        <span class="tag">2024</span>
+        <span class="award">🏆 Cannes 2024 — Jury Special Prize</span>
+      </div>
+      <p class="film-synopsis">Investigating judge Iman grapples with paranoia amid political unrest in Tehran. When his gun vanishes, he suspects his wife and daughters, imposing draconian measures that strain family ties as societal rules crumble.</p>
+      <div class="film-links">
+        <a href="https://letterboxd.com/film/the-seed-of-the-sacred-fig/" target="_blank" rel="noopener">Letterboxd</a>
+        <a href="https://www.youtube.com/watch?v=TV3Sk2zwqK4" target="_blank" rel="noopener">Trailer</a>
+      </div>
+    </li>
+
+    <li class="film-entry">
+      <p class="film-date">13 May &nbsp;·&nbsp; Doors 8 pm &nbsp;·&nbsp; Film 8:30 pm</p>
+      <h2 class="film-title">No Bears</h2>
+      <div class="film-tags">
+        <span class="tag">Jafar Panahi</span>
+        <span class="tag">2022</span>
+        <span class="award">🏆 Venice 2022 — Special Jury Prize</span>
+      </div>
+      <p class="film-synopsis">Prohibited from leaving Iran, filmmaker Jafar Panahi — playing a fictionalized version of himself — relocates to a rural border town to remotely direct a film in nearby Turkey, and finds himself embroiled in a local scandal.</p>
+      <div class="film-links">
+        <a href="https://letterboxd.com/film/no-bears/" target="_blank" rel="noopener">Letterboxd</a>
+        <a href="https://www.youtube.com/watch?v=oTJBVrxLfRs" target="_blank" rel="noopener">Trailer</a>
+      </div>
+    </li>
+
+  </ul>
+
+  <footer>All films in original language with German or English subtitles, depending on audience preference.</footer>
+
+</body>
+</html>
