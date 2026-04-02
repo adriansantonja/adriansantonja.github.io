@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -191,6 +190,33 @@
       border: 1px solid #e8d68a;
     }
 
+    /* ── Practical info ── */
+
+    .practical {
+      margin-top: 2.8rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid var(--rule);
+      font-size: 0.95rem;
+      color: #3a3530;
+      line-height: 1.8;
+    }
+
+    .practical p + p {
+      margin-top: 0.6rem;
+    }
+
+    .practical a {
+      color: var(--accent-mid);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent-light);
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .practical a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
     /* ── Footer ── */
 
     footer {
@@ -217,7 +243,7 @@
   <ul class="film-list">
 
     <li class="film-entry">
-      <p class="film-date">17 April &nbsp;·&nbsp; Doors 8 pm &nbsp;·&nbsp; Film 8:30 pm</p>
+      <p class="film-date">17 April &nbsp;·&nbsp; Doors 7:30 pm &nbsp;·&nbsp; Film 8:00 pm</p>
       <h2 class="film-title">It Was Just an Accident</h2>
       <div class="film-tags">
         <span class="tag">Jafar Panahi</span>
@@ -232,7 +258,7 @@
     </li>
 
     <li class="film-entry">
-      <p class="film-date">30 April &nbsp;·&nbsp; Doors 8 pm &nbsp;·&nbsp; Film 8:30 pm</p>
+      <p class="film-date">30 April &nbsp;·&nbsp; Doors 7:30 pm &nbsp;·&nbsp; Film 8:00 pm</p>
       <h2 class="film-title">The Seed of the Sacred Fig</h2>
       <div class="film-tags">
         <span class="tag">Mohammad Rasoulof</span>
@@ -247,7 +273,7 @@
     </li>
 
     <li class="film-entry">
-      <p class="film-date">13 May &nbsp;·&nbsp; Doors 8 pm &nbsp;·&nbsp; Film 8:30 pm</p>
+      <p class="film-date">13 May &nbsp;·&nbsp; Doors 7:30 pm &nbsp;·&nbsp; Film 8:00 pm</p>
       <h2 class="film-title">No Bears</h2>
       <div class="film-tags">
         <span class="tag">Jafar Panahi</span>
@@ -262,6 +288,11 @@
     </li>
 
   </ul>
+
+  <div class="practical">
+    <p>You want to eat something while watching? I recommend these places to grab something to-go: <a href="https://www.google.com/maps/place/Pizza+con+Amore/@52.5264326,13.3379017,17z/data=!4m6!3m5!1s0x47a8510cf5a2a7d3:0x1fd1dca3c62ee13a!8m2!3d52.5263795!4d13.3373256!16s%2Fg%2F11b7fz08ts?entry=ttu&g_ep=EgoyMDI2MDMzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">here</a>, <a href="https://www.google.com/maps/place/Humbaba+Falafel/@52.5264326,13.3379017,17z/data=!3m1!5s0x47a8510c8a61b82f:0xf9973c1c37797a63!4m6!3m5!1s0x47a8510c8aba9cbf:0xb1c9547743024de6!8m2!3d52.5263099!4d13.3382697!16s%2Fg%2F11b7rxj8lj?entry=ttu&g_ep=EgoyMDI2MDMzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">here</a> and <a href="https://www.google.com/maps/place/Pizza+Teigmeister/@52.523332,13.3347045,16z/data=!3m1!5s0x47a8510f0240be19:0xfdbc810ecb168586!4m6!3m5!1s0x47a8510f01f47b27:0x6f88f565651958c2!8m2!3d52.521238!4d13.3340732!16s%2Fg%2F11b6g99gqw?entry=ttu&g_ep=EgoyMDI2MDMzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">here</a>.</p>
+    <p>You want to bring a drink? Get something from <a href="https://www.google.com/maps/place/DHL+Paketshop+904/@52.5248411,13.3385695,18z/data=!3m1!5s0x47a8510bf2a4d751:0x5341c6f8edd15d1d!4m10!1m2!2m1!1zc3DDpHRp!3m6!1s0x47a8516618d38a1b:0x47cb4c00a61e405e!8m2!3d52.5246989!4d13.3397812!15sCgZzcMOkdGlaCCIGc3DDpHRpkgEcc2hpcHBpbmdfYW5kX21haWxpbmdfc2VydmljZZoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VOVWEwMXlhakpCUlJBQuABAPoBBAgAECM!16s%2Fg%2F11vynqcvps?entry=ttu&g_ep=EgoyMDI2MDMzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">this Späti</a>.</p>
+  </div>
 
   <footer>All films in original language with German or English subtitles, depending on audience preference.</footer>
 
