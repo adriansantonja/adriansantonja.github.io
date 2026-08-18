@@ -32,12 +32,12 @@
  
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 100px;
+            scroll-padding-top: 90px;
         }
  
         body {
             font-family: 'DM Sans', sans-serif;
-            line-height: 1.7;
+            line-height: 1.6;
             color: var(--ink);
             background: var(--paper);
             min-height: 100vh;
@@ -63,7 +63,7 @@
             background: rgba(249, 247, 243, 0.92);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            padding: 1.2rem 0;
+            padding: 1rem 0;
             position: fixed;
             top: 0;
             width: 100%;
@@ -72,17 +72,17 @@
         }
  
         .nav-container {
-            max-width: 1300px;
+            max-width: 1060px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 3rem;
+            padding: 0 2.5rem;
        }
  
         .logo {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem;
+            font-size: 1.45rem;
             font-weight: 500;
             color: var(--ink);
             letter-spacing: 0.02em;
@@ -91,14 +91,14 @@
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 3rem;
+            gap: 2.25rem;
         }
  
         .nav-links a {
             text-decoration: none;
             color: var(--stone);
             font-weight: 400;
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             letter-spacing: 0.08em;
             text-transform: uppercase;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -127,7 +127,7 @@
         /* Hero Section with Dark Green Background */
         .hero-wrapper {
             background: linear-gradient(135deg, var(--forest-dark) 0%, var(--forest) 100%);
-            margin-top: 80px;
+            margin-top: 68px;
             position: relative;
             overflow: hidden;
         }
@@ -156,12 +156,12 @@
  
         /* Hero Section */
         .hero {
-            max-width: 1300px;
+            max-width: 1060px;
             margin: 0 auto;
-            padding: 6rem 3rem;
+            padding: 3.5rem 2.5rem;
             display: grid;
-            grid-template-columns: 1fr 320px;
-            gap: 5rem;
+            grid-template-columns: 1fr 280px;
+            gap: 3rem;
             align-items: center;
             position: relative;
         }
@@ -204,10 +204,10 @@
         .hero-photo::before {
             content: '';
             position: absolute;
-            top: 20px;
-            left: 20px;
-            right: -20px;
-            bottom: -20px;
+            top: 16px;
+            left: 16px;
+            right: -16px;
+            bottom: -16px;
             border: 1px solid rgba(107, 68, 35, 0.4);
             z-index: -1;
         }
@@ -227,9 +227,9 @@
  
         .hero h1 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 3.8rem;
+            font-size: 3.4rem;
             color: #ffffff;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.35rem;
             font-weight: 400;
             letter-spacing: -0.03em;
             line-height: 1.1;
@@ -238,16 +238,16 @@
  
         .hero .title {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.4rem;
+            font-size: 1.35rem;
             color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             font-weight: 400;
             font-style: italic;
             letter-spacing: 0.02em;
         }
  
         .hero .affiliations {
-            margin-bottom: 2.5rem;
+            margin-bottom: 1.35rem;
             display: flex;
             flex-wrap: wrap;
             gap: 0.8rem;
@@ -256,7 +256,7 @@
         .affiliation {
             background: transparent;
             color: rgba(255, 255, 255, 0.85);
-            padding: 0.5rem 0;
+            padding: 0;
             font-size: 0.85rem;
             font-weight: 400;
             letter-spacing: 0.02em;
@@ -286,26 +286,26 @@
         }
  
         .hero .bio {
-            font-size: 1.05rem;
-            line-height: 1.9;
+            font-size: 1rem;
+            line-height: 1.75;
             color: rgba(255, 255, 255, 0.92);
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             font-weight: 300;
-            max-width: 580px;
+            max-width: 560px;
         }
 
         .social-links {
             display: flex;
-            gap: 1.5rem;
-            margin-bottom: 2.5rem;
+            gap: 1rem;
+            margin-bottom: 1.75rem;
         }
 
         .social-links a {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
+            width: 38px;
+            height: 38px;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.1);
             transition: all 0.3s ease;
@@ -319,21 +319,21 @@
         }
 
         .social-links svg {
-            width: 20px;
-            height: 20px;
+            width: 19px;
+            height: 19px;
             fill: #ffffff;
         }
  
         .cv-button {
             display: inline-flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: 0.7rem;
             background: transparent;
             color: #ffffff;
-            padding: 1rem 2rem;
+            padding: 0.8rem 1.7rem;
             text-decoration: none;
             font-weight: 500;
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             letter-spacing: 0.1em;
             text-transform: uppercase;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -375,25 +375,29 @@
  
         /* Main Content */
         .container {
-            max-width: 1300px;
+            max-width: 1060px;
             margin: 0 auto;
-            padding: 80px 3rem;
+            padding: 44px 2.5rem;
         }
  
         /* Section Headers */
         .section {
-            margin-bottom: 8rem;
-            scroll-margin-top: 100px;
+            margin-bottom: 3.5rem;
+            scroll-margin-top: 90px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
         }
  
         .section-header {
-            margin-bottom: 4rem;
+            margin-bottom: 1.75rem;
             position: relative;
         }
  
         .section-title {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             color: var(--ink);
             font-weight: 700;
             letter-spacing: -0.02em;
@@ -405,74 +409,59 @@
             color: var(--stone);
             font-style: italic;
             font-weight: 300;
-            margin-top: 0.8rem;
+            margin-top: 0.5rem;
             font-family: 'Cormorant Garamond', serif;
         }
  
         .subsection-title {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             color: var(--ink);
-            margin: 5rem 0 2.5rem 0;
+            margin: 2.25rem 0 1.1rem 0;
             font-weight: 700;
             letter-spacing: 0.03em;
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
- 
-        .subsection-title::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: linear-gradient(90deg, var(--mist) 0%, transparent 100%);
         }
  
         /* Publications */
         .publication {
-            margin-bottom: 1.5rem;
-            padding: 1.25rem 0;
-            border-bottom: 1px solid var(--mist);
+            margin-bottom: 0.9rem;
+            padding: 0.7rem 0;
             transition: all 0.4s ease;
             position: relative;
-        }
- 
-        .publication:last-child {
-            border-bottom: none;
         }
  
         .publication::before {
             content: '';
             position: absolute;
-            left: -3rem;
-            top: 1.25rem;
-            width: 6px;
+            left: -1.5rem;
+            top: 0.7rem;
+            width: 4px;
             height: 0;
             background: var(--forest);
             transition: height 0.4s ease;
         }
  
         .publication:hover::before {
-            height: 60px;
+            height: 48px;
         }
  
         /* Reduced spacing for Work in Progress items */
         .publication.wip {
-            margin-bottom: 0.75rem;
-            padding: 0.75rem 0;
+            margin-bottom: 0.4rem;
+            padding: 0.5rem 0;
         }
  
         .publication.wip:hover::before {
-            height: 40px;
+            height: 34px;
         }
  
         .publication-title {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem;
+            font-size: 1.45rem;
             font-weight: 500;
             color: var(--ink);
-            margin-bottom: 0.8rem;
-            line-height: 1.4;
+            margin-bottom: 0.3rem;
+            line-height: 1.35;
             letter-spacing: -0.01em;
         }
  
@@ -489,8 +478,8 @@
         .coauthors {
             color: var(--stone);
             font-style: italic;
-            font-size: 0.95rem;
-            margin-bottom: 1.5rem;
+            font-size: 0.92rem;
+            margin-bottom: 0.55rem;
             font-weight: 300;
         }
 
@@ -505,30 +494,22 @@
             color: var(--forest-light) !important;
             border-bottom-color: var(--forest);
         }
-
-        .coauthors a {
-            color: inherit;
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: all 0.3s ease;
-        }
-
-        .coauthors a:hover {
-            color: var(--forest);
-            border-bottom-color: var(--forest);
-        }
  
         .publication-meta {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.8rem;
-            margin-bottom: 1.5rem;
+            gap: 0.6rem;
+            margin-bottom: 0.5rem;
             align-items: center;
+        }
+
+        .publication-meta:last-of-type {
+            margin-bottom: 0.6rem;
         }
  
         .journal {
             color: var(--brown);
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             font-weight: 600;
             letter-spacing: 0.01em;
             font-family: 'DM Sans', sans-serif;
@@ -548,17 +529,17 @@
         .year {
             background: var(--brown);
             color: white;
-            font-size: 0.75rem;
+            font-size: 0.73rem;
             font-weight: 500;
-            padding: 0.3rem 0.8rem;
+            padding: 0.28rem 0.75rem;
             letter-spacing: 0.05em;
         }
  
         .status-badge {
             background: var(--cream);
             color: var(--stone);
-            padding: 0.4rem 1rem;
-            font-size: 0.75rem;
+            padding: 0.32rem 0.9rem;
+            font-size: 0.73rem;
             font-weight: 500;
             letter-spacing: 0.05em;
             text-transform: uppercase;
@@ -566,10 +547,10 @@
  
         .abstract-heading {
             font-weight: 400;
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             color: var(--stone);
             margin-top: 0;
-            margin-bottom: 0.8rem;
+            margin-bottom: 0;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             cursor: pointer;
@@ -595,9 +576,9 @@
 
         .abstract {
             color: var(--stone);
-            font-size: 0.95rem;
-            line-height: 1.8;
-            padding: 1.5rem;
+            font-size: 0.93rem;
+            line-height: 1.75;
+            padding: 1.1rem 1.25rem;
             background: var(--pearl);
             border-left: 3px solid var(--forest);
             max-height: 0;
@@ -609,14 +590,14 @@
         .abstract.expanded {
             max-height: 1000px;
             opacity: 1;
-            margin-top: 0.8rem;
+            margin-top: 0.6rem;
         }
 
         .status-badge-rnr {
             background: var(--forest);
             color: white;
-            padding: 0.4rem 1rem;
-            font-size: 0.75rem;
+            padding: 0.32rem 0.9rem;
+            font-size: 0.73rem;
             font-weight: 500;
             letter-spacing: 0.05em;
             text-transform: uppercase;
@@ -626,19 +607,18 @@
             font-style: italic;
             color: var(--warm-gray);
             font-size: 0.9rem;
-            margin-top: 1rem;
+            margin-top: 0.8rem;
             font-weight: 300;
         }
  
         /* Teaching Section */
         .teaching-item {
-            margin-bottom: 1.25rem;
-            padding: 1rem 0;
-            border-bottom: 1px solid var(--mist);
+            margin-bottom: 1.5rem;
+            padding: 0;
         }
 
         .teaching-item:last-child {
-            border-bottom: none;
+            margin-bottom: 0;
         }
 
         .teaching-institution {
@@ -646,7 +626,7 @@
             font-size: 1.2rem;
             font-weight: 500;
             color: var(--ink);
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
 
         .teaching-period {
@@ -656,16 +636,16 @@
         }
 
         .course-list {
-            margin-top: 1rem;
+            margin-top: 0.5rem;
             display: flex;
             flex-direction: column;
-            gap: 0.8rem;
+            gap: 0.85rem;
         }
 
         .course {
             color: var(--stone);
             font-size: 0.95rem;
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
         .course-level {
@@ -675,73 +655,108 @@
             margin-left: 0.5rem;
         }
 
+        /* Course evaluation links */
+        .eval-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.45rem;
+        }
+
+        .eval-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            color: var(--forest);
+            background: transparent;
+            border: 1px solid var(--mist);
+            padding: 0.3rem 0.7rem;
+            font-size: 0.74rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .eval-link svg {
+            width: 12px;
+            height: 12px;
+            stroke: currentColor;
+            flex-shrink: 0;
+        }
+
+        .eval-link:hover {
+            color: #ffffff;
+            background: var(--forest);
+            border-color: var(--forest);
+        }
+
         /* Conferences Section */
         .conference-year {
-            margin-bottom: 1.5rem;
+            display: grid;
+            grid-template-columns: 4rem 1fr;
+            gap: 0 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .conference-year:last-child {
+            margin-bottom: 0;
         }
 
         .conference-year-header {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             font-weight: 500;
             color: var(--brown);
-            margin-bottom: 1rem;
+            line-height: 1.32;
+            margin-bottom: 0;
         }
 
         .conference-list {
             color: var(--stone);
-            font-size: 0.95rem;
-            line-height: 1.9;
-            padding-left: 1.5rem;
+            font-size: 0.94rem;
+            line-height: 1.75;
+            padding-left: 0;
         }
  
         /* Footer */
         .footer {
             background: var(--ink);
             color: var(--pearl);
-            padding: 5rem 3rem;
-            margin-top: 6rem;
+            padding: 3rem 2.5rem;
+            margin-top: 3rem;
             position: relative;
             overflow: hidden;
         }
  
-        .footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--olive) 50%, transparent);
-        }
- 
         .footer-content {
-            max-width: 1300px;
+            max-width: 1060px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 3rem;
         }
  
         .footer h3 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 400;
             color: var(--paper);
-            margin-bottom: 2rem;
+            margin-bottom: 1.1rem;
         }
  
         .contact-info {
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
+            gap: 1rem;
             font-weight: 300;
-            line-height: 1.8;
+            line-height: 1.7;
         }
  
         .contact-item strong {
             display: block;
-            font-size: 0.75rem;
+            font-size: 0.73rem;
             font-weight: 500;
             letter-spacing: 0.15em;
             text-transform: uppercase;
@@ -750,7 +765,7 @@
         }
 
         .address-block {
-            margin-bottom: 2.5rem;
+            margin-bottom: 1.1rem;
         }
 
         .address-block:last-child {
@@ -758,18 +773,18 @@
         }
 
         .address-separator {
-            margin-top: 1rem;
+            margin-top: 0.8rem;
         }
  
         /* Mobile Responsiveness */
         @media (max-width: 1024px) {
             .hero {
                 grid-template-columns: 1fr;
-                gap: 3rem;
+                gap: 2.25rem;
             }
  
             .hero-photo {
-                max-width: 300px;
+                max-width: 270px;
                 margin: 0 auto;
             }
  
@@ -785,23 +800,23 @@
             }
  
             .nav-container {
-                padding: 0 1.5rem;
+                padding: 0 1.25rem;
             }
  
             .container {
-                padding: 60px 1.5rem;
+                padding: 36px 1.25rem;
             }
 
             .hero {
-                padding: 4rem 1.5rem;
+                padding: 2.75rem 1.25rem;
             }
  
             .hero h1 {
-                font-size: 2.6rem;
+                font-size: 2.4rem;
             }
  
             .section-title {
-                font-size: 2rem;
+                font-size: 1.9rem;
             }
  
             .publication::before {
@@ -814,6 +829,15 @@
  
             .hero-photo::before {
                 display: none;
+            }
+
+            .footer {
+                padding: 2.5rem 1.25rem;
+            }
+
+            .conference-year {
+                grid-template-columns: 1fr;
+                gap: 0.15rem;
             }
         }
  
@@ -844,10 +868,20 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            .animate-on-scroll {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+        }
  
         /* Focus states */
         .nav-links a:focus,
-        .cv-button:focus {
+        .cv-button:focus,
+        .eval-link:focus {
             outline: 2px solid var(--brown-light);
             outline-offset: 4px;
         }
@@ -1012,6 +1046,20 @@
                 <div class="course-list">
                     <div class="course">
                         Introduction to Economics <span class="course-level">[Undergraduate]</span>
+                        <div class="eval-links">
+                            <a href="teaching%20evaluations/Santonja_EVWL_WiSe2025_Teaching_Evaluation_EN_with_originals.pdf" class="eval-link" target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg>
+                                Course evaluation 2025/26
+                            </a>
+                            <a href="teaching%20evaluations/Santonja_EVWL_WiSe2024_Teaching_Evaluation_EN_with_originals.pdf" class="eval-link" target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg>
+                                Course evaluation 2024/25
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1023,9 +1071,25 @@
                 <div class="course-list">
                     <div class="course">
                         Economics I <span class="course-level">[Graduate]</span>
+                        <div class="eval-links">
+                            <a href="teaching%20evaluations/GRAD-C7-Lab_Santonja_evaluation.pdf" class="eval-link" target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg>
+                                Course evaluation
+                            </a>
+                        </div>
                     </div>
                     <div class="course">
                         Statistics II <span class="course-level">[Graduate]</span>
+                        <div class="eval-links">
+                            <a href="teaching%20evaluations/GRAD-C6-2001lab_Santonja.pdf" class="eval-link" target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg>
+                                Course evaluation
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
