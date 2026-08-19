@@ -646,6 +646,14 @@
             color: var(--stone);
             font-size: 0.95rem;
             line-height: 1.5;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.4rem 0.9rem;
+        }
+
+        .course-name {
+            white-space: nowrap;
         }
 
         .course-level {
@@ -660,28 +668,28 @@
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
-            margin-top: 0.45rem;
+            margin-top: 0;
         }
 
         .eval-link {
             display: inline-flex;
             align-items: center;
-            gap: 0.45rem;
+            gap: 0.35rem;
             color: var(--forest);
             background: transparent;
             border: 1px solid var(--mist);
-            padding: 0.3rem 0.7rem;
-            font-size: 0.74rem;
+            padding: 0.16rem 0.5rem;
+            font-size: 0.66rem;
             font-weight: 500;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.04em;
             text-transform: uppercase;
             text-decoration: none;
             transition: all 0.3s ease;
         }
 
         .eval-link svg {
-            width: 12px;
-            height: 12px;
+            width: 10px;
+            height: 10px;
             stroke: currentColor;
             flex-shrink: 0;
         }
@@ -839,6 +847,14 @@
                 grid-template-columns: 1fr;
                 gap: 0.15rem;
             }
+
+            .course-name {
+                white-space: normal;
+            }
+
+            .course {
+                gap: 0.4rem;
+            }
         }
  
         .mobile-nav {
@@ -923,7 +939,7 @@
                 </div>
  
                 <p class="bio">
-                    Welcome to my webpage! I am a PhD Candidate at the University of Potsdam and DIW Berlin, and I am also affiliated with the Berlin School of Economics. I am an applied microeconomist with a primary focus on environmental economics and health economics.
+                    Welcome to my webpage! I am a PhD Candidate at the University of Potsdam and DIW Berlin. I am also affiliated with the Berlin School of Economics. I am an applied microeconomist with a primary focus on environmental economics and health economics.
                 </p>
 
                 <div class="social-links">
@@ -1026,7 +1042,7 @@
  
             <div class="publication wip animate-on-scroll">
                 <h3 class="publication-title">The Pernicious Air Quality and Mortality Effects of Low Emission Zones – Evidence from Madrid Central</h3>
-                <div class="coauthors">With <a href="https://luissarmiento.net/" target="_blank">Alejandro Sarmiento</a> and <a href="https://sites.google.com/view/nicolewaegner" target="_blank">Nicole Wägner</a></div>
+                <div class="coauthors">With <a href="https://www.luissarmiento.com/" target="_blank">Luis Sarmiento</a> and <a href="https://sites.google.com/view/nicolewaegner" target="_blank">Nicole Wägner</a></div>
                 <div class="publication-meta">
                     <span class="status-badge">Draft in Preparation</span>
                 </div>
@@ -1045,7 +1061,7 @@
                 </div>
                 <div class="course-list">
                     <div class="course">
-                        Introduction to Economics <span class="course-level">[Undergraduate]</span>
+                        <span class="course-name">Introduction to Economics <span class="course-level">[Undergraduate]</span></span>
                         <div class="eval-links">
                             <a href="teaching%20evaluations/Santonja_EVWL_WiSe2025_Teaching_Evaluation_EN_with_originals.pdf" class="eval-link" target="_blank" rel="noopener">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
@@ -1070,7 +1086,7 @@
                 </div>
                 <div class="course-list">
                     <div class="course">
-                        Economics I <span class="course-level">[Graduate]</span>
+                        <span class="course-name">Economics I <span class="course-level">[Graduate]</span></span>
                         <div class="eval-links">
                             <a href="teaching%20evaluations/GRAD-C7-Lab_Santonja_evaluation.pdf" class="eval-link" target="_blank" rel="noopener">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
@@ -1081,7 +1097,7 @@
                         </div>
                     </div>
                     <div class="course">
-                        Statistics II <span class="course-level">[Graduate]</span>
+                        <span class="course-name">Statistics II <span class="course-level">[Graduate]</span></span>
                         <div class="eval-links">
                             <a href="teaching%20evaluations/GRAD-C6-2001lab_Santonja.pdf" class="eval-link" target="_blank" rel="noopener">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
